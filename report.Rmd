@@ -1,0 +1,44 @@
+---
+title: "DATA 550 Final Project"
+author: "Neha Mokashi"
+date: "`r Sys.Date()`"
+output: html_document
+---
+```{r, load-data}
+library(here)
+library(knitr)
+
+here::i_am("report.Rmd")
+proj_data <- readRDS(
+  file = here::here("data/final_project_data.rds")
+)
+```
+
+# Introduction
+The dataset used in this analysis includes data on patient visits at an STI clinic in Boston from January 1st, 2020 to December 31st, 2023. The data includes the patient's ID, the date of the clinic visit, an indicator variable for if the patient received a gonorrhea test, an indicator variable for if the patient received a chlamydia test, and an indicator variable for if the patient received an HIV test at the visit. The purpose of this analysis is to identify the average number of STI tests an individual has taken stratified by test type. We also aim to visualize the total number of STI tests stratified by test type through a bar chart. This descriptive analysis will provide an understanding of the extent of the utilization of STI screening services within the clinic from 2020 to 2023.
+
+# Tabular Analysis
+```{r, table}
+proj_table <- readRDS(
+  file = here::here("output/proj_table.rds")
+)
+
+proj_table
+```
+
+This table contains the mean and standard deviation of the number of gonorrhea, chlamydia, and HIV tests taken at the individual-level by patients visiting the STI clinic from 2020 to 2023. There are a total of 100 patients in the dataset. HIV tests had the highest average number of tests at the individual-level among the test types.
+
+# Graphical Analysis
+```{r, figure}
+#| fig.align = "center",
+#| out.width = "600px"
+
+knitr::include_graphics(
+  here::here("output/figure.png")
+)
+```
+
+This figure depicts the overall total number of gonorrhea, chlamydia, and HIV tests taken by individuals who visited the STI clinic from 2020 to 2023. The total number of tests is very similar across the different tests, with there being more HIV tests than any other test type. 
+
+
+
