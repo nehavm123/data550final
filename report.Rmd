@@ -4,7 +4,7 @@ author: "Neha Mokashi"
 date: "`r Sys.Date()`"
 output: html_document
 ---
-```{r, load-data}
+```{r, load-data, message=FALSE}
 library(here)
 library(knitr)
 
@@ -18,7 +18,7 @@ proj_data <- readRDS(
 The dataset used in this analysis includes data on patient visits at an STI clinic in Boston from January 1st, 2020 to December 31st, 2023. The data includes the patient's ID, the date of the clinic visit, an indicator variable for if the patient received a gonorrhea test, an indicator variable for if the patient received a chlamydia test, and an indicator variable for if the patient received an HIV test at the visit. The purpose of this analysis is to identify the average number of STI tests an individual has taken stratified by test type. We also aim to visualize the total number of STI tests stratified by test type through a bar chart. This descriptive analysis will provide an understanding of the extent of the utilization of STI screening services within the clinic from 2020 to 2023.
 
 # Tabular Analysis
-```{r, table}
+```{r, table, echo=FALSE}
 proj_table <- readRDS(
   file = here::here("output/proj_table.rds")
 )
@@ -29,7 +29,7 @@ proj_table
 This table contains the mean and standard deviation of the number of gonorrhea, chlamydia, and HIV tests taken at the individual-level by patients visiting the STI clinic from 2020 to 2023. There are a total of 100 patients in the dataset. HIV tests had the highest average number of tests at the individual-level among the test types.
 
 # Graphical Analysis
-```{r, figure}
+```{r, figure, echo=FALSE}
 #| fig.align = "center",
 #| out.width = "600px"
 

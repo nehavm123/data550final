@@ -8,7 +8,7 @@ The dataset used in this analysis includes data on patient visits at an STI clin
 ## Instructions for Synchronizing Package Repository and Generating Final Report
 1. Fork and clone repository from GitHub to local machine
 2. Make sure current working directory of the terminal and console is set to the folder that contains the cloned repository
-3. Make sure `renv` package is installed
+3. Make sure `renv` package is installed and the project is activated
 4. Run the command `make install` in the terminal to synchronize the package repository
 3. Run the command `make report.html` in the terminal to generate the final report
 
