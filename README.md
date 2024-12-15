@@ -17,7 +17,7 @@ Link to DockerHub image: https://hub.docker.com/repository/docker/nehavm123/proj
 ## Instructions for Building the Image Locally
 If you would like to build the image locally instead of using the one on DockerHub, use the following instructions.
 1. Fork and clone the repository from GitHub to your local machine
-2. Make sure the current working directory of the terminal and console is set to the folder that contains the cloned repository
+2. Make sure the current working directory of the terminal and console is set to the folder that contains the cloned repository.
 3. Run `make project-image` in the terminal to build the image locally.
 
 ------------------------------------------------------------------------
