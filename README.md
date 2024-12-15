@@ -8,17 +8,19 @@ The dataset used in this analysis includes data on patient visits at an STI clin
 ## Instructions for Generating Final Report using Image on DockerHub (Automated Version of Image)
 1. Fork and clone the repository from GitHub to your local machine.
 2. Make sure the current working directory of the terminal and console is set to the folder that contains the cloned repository.
-3. To use the image from DockerHub, run `docker pull nehavm123/project_image1:latest` in the terminal.
-4. If you have a Windows operating system, run `make report-windows` in the terminal to generate the report. If you have a Mac operating system, run `make report-mac` in the terminal to generate the report.
-5. The final report will be generated in the report/ folder on your local machine.
+3. Open the `final_project2.Rproj` from the project directory.
+4. To use the image from DockerHub, run `docker pull nehavm123/project_image1:latest` in the terminal.
+5. If you have a Windows operating system, run `make report-windows` in the terminal to generate the report. If you have a Mac operating system, run `make report-mac` in the terminal to generate the report.
+6. The final report will be generated in the report/ folder on your local machine.
 
 Link to DockerHub image: https://hub.docker.com/repository/docker/nehavm123/project_image1/general 
 
 ## Instructions for Building the Image Locally
 If you would like to build the image locally instead of using the one on DockerHub, use the following instructions.
-1. Fork and clone the repository from GitHub to your local machine
+1. Fork and clone the repository from GitHub to your local machine.
 2. Make sure the current working directory of the terminal and console is set to the folder that contains the cloned repository.
-3. Run `make project-image` in the terminal to build the image locally.
+3. Open the `final_project2.Rproj` from the project directory.
+4. Run `make project-image` in the terminal to build the image locally.
 
 ------------------------------------------------------------------------
 
